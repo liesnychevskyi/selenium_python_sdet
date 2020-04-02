@@ -12,16 +12,17 @@ tc_sign_up = unittest.TestLoader().loadTestsFromTestCase(SingUpTest)
 tc_payment = unittest.TestLoader().loadTestsFromTestCase(PaymentTest)
 tc_payment_return = unittest.TestLoader().loadTestsFromTestCase(PaymentReturnTest)
 
-
 # Creating test suite
-sanity_tes_suite = unittest.TestSuite([tc_login, tc_sign_up])
-unittest.TextTestRunner().run(sanity_tes_suite)
+# sanity_tes_suite = unittest.TestSuite([tc_login, tc_sign_up])
+# unittest.TextTestRunner().run(sanity_tes_suite)
 
 
 # functional_test_suite = unittest.TestSuite([tc_login, tc_sign_up])
 # unittest.TextTestRunner().run(functional_test_suite)
-
-
-# # Master test suite
+#
+#
+# # # Master test suite
 master_test_suite = unittest.TestSuite([tc_login, tc_sign_up, tc_payment, tc_payment_return])
 unittest.TextTestRunner(verbosity=2).run(master_test_suite)
+
+#   verbosity - logs about tests
