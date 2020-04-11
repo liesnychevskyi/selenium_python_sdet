@@ -23,7 +23,7 @@ class OrangeHrmTest(unittest.TestCase):
         self.driver.find_element_by_name("txtPassword").send_keys("admin123")
         self.driver.find_element_by_name("Submit").click()
         time.sleep(5)
-        self.assertEqual("OrangeHRM3", self.driver.title, "Web page Title is not matching")
+        self.assertEqual("OrangeHRM", self.driver.title, "Web page Title is not matching")
 
     @classmethod
     def tearDownClass(cls):
